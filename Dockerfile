@@ -4,7 +4,7 @@ RUN apt update && apt install -y qt6-base-dev qt6-svg-dev postgresql g++ make wg
 
 WORKDIR /src/
 
-ARG VERSION="1.1.2"
+ARG VERSION="1.1.3"
 
 RUN wget -O pgmodeler-v${VERSION}.tar.gz https://codeload.github.com/pgmodeler/pgmodeler/tar.gz/refs/tags/v${VERSION} && \
     tar -xvf pgmodeler-v${VERSION}.tar.gz
